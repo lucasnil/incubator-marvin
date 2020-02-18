@@ -20,7 +20,7 @@ REQUIREMENTS_TESTS = [
 def _get_version():
     """Return the project version from VERSION file."""
 
-    with open(join(dirname(__file__), '{{project.package}}/VERSION'), 'rb') as f:
+    with open(join(dirname(__file__), 'marvin_testando_mllib_engine/VERSION'), 'rb') as f:
         version = f.read().decode('ascii').strip()
     return version
 
@@ -133,14 +133,14 @@ class Tox(TestCommand):
 
 
 setup(
-    name='{{project.package}}',
+    name='marvin_testando_mllib_engine',
     version=_get_version(),
-    url='{{project.url}}',
-    description='{{project.description}}',
+    url='',
+    description='Marvin engine',
     long_description=open(join(dirname(__file__), 'README.md')).read(),
-    author='{{mantainer.name}}',
-    maintainer='{{mantainer.name}}',
-    maintainer_email='{{mantainer.email}}',
+    author='Marvin AI Community',
+    maintainer='Marvin AI Community',
+    maintainer_email='marvin-ai@googlegroups.com',
     packages=find_packages(exclude=('tests', 'tests.*')),
     include_package_data=True,
     zip_safe=False,
@@ -162,7 +162,7 @@ setup(
         'numpy>=1.13.1',
         'pandas>=0.20.3',
         'matplotlib>=2.0.2',
-        'marvin-python-toolbox>={{project.toolbox_version}}',
+        'marvin-python-toolbox>=0.0.5',
         'Fabric>=1.14.0',
         'pyspark>=2.4.4',
     ],
