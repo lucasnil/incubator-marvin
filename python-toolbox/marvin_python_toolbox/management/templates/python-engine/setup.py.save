@@ -165,8 +165,6 @@ setup(
         'marvin-python-toolbox>={{project.toolbox_version}}',
         'Fabric>=1.14.0',
         'pyspark>=2.4.4',
-        'pymfe>=0.3.0',
-
     ],
     tests_require=REQUIREMENTS_TESTS,
     extras_require={
