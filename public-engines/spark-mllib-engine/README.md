@@ -1,4 +1,4 @@
-# testando_mllib v0.0.1
+# spark_mllib v0.0.1
 
 ## Overview
 
